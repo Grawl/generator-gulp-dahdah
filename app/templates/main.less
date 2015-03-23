@@ -6,6 +6,12 @@
 // bower:less
 // endbower
 
+<% if (!(includeBootstrap) && !(includeSass)) { %>
+// Super lightweight framework based on Bootstrap naming conventions so you can get started right away.
+// If you'd rather start from scratch, simply delete this block and run 'bower uninstall --save preboot'
+// in your commmand line from within the project's root folder.
+@import "bower_components/preboot/less/preboot.less";
+<% } %>
 
 // All variables required for project
 @import "variables.less";

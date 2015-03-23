@@ -136,6 +136,9 @@ module.exports = yeoman.generators.Base.extend({
       } else {
         bower.dependencies.jquery = '~2.1.1';
         bower.dependencies['normalize-css'] = '~3.0.2';
+        if (!this.includeSass) {
+          bower.dependencies['preboot'] = 'master';
+        }
       }
 
       if (this.includeModernizr) {
